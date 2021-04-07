@@ -1,0 +1,16 @@
+// Instalar pré-processador sass no projeto, dependências necessárias:
+
+# yarn add sass-loader -D
+
+# yarn add node-sass -D 
+
+
+arquivo webpack.config
+======================
+ {
+    // configuração para utilizar css no projeto
+    test: /\.scss$/, // verifica importação de arquivos com extensão css
+    exclude: /node_modules/,
+    use:['style-loader', 'css-loader', 'sass-loader' ] // loaders pega todo css da aplicação e aplica na página conforme necessário
+  } 
+

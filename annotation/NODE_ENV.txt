@@ -1,0 +1,5 @@
+// Para setar a node_env como produção em ambientes mac ou unix:
+# NODE_ENV=production yarn webpack
+
+// Pacote para setar o node_env independete do sistema
+# yarn add cross-env -D

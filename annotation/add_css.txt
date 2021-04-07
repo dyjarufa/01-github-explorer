@@ -1,0 +1,13 @@
+// Para utilizar o css no projeto é preciso configurar o webpack e instalar os seguintes pacotes:
+
+yarn add style-loader css-loader -D
+
+
+webpack.config:
+===============
+ {
+        // configuração para utilizar css no projeto
+        test: /\.css$/, // verifica importação de arquivos com extensão css
+        exclude: /node_modules/,
+        use:['style-loader', 'css-loader' ] // loaders pega todo css da aplicação e aplica na página conforme necessário
+      } 
